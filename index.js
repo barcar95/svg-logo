@@ -51,7 +51,16 @@ const userPrompts = () => {
     svg.setText(answers.text);
     svg.setColor(answers.textColor);
     svg.setShapeColor(answers.shapeColor);
-    console.log(answers);
+
+    fs.writeFile( `./examples/${answers.shape}.svg`, svg.render(), (err) => {
+        if (err){
+            console.log(err);
+        } else {
+            console.log("Success!");
+        }
+    } )
+
+    // console.log(answers);
   })
 }
  userPrompts();
