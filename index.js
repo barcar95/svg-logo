@@ -36,8 +36,25 @@ const userPrompts = () => {
         message: "type in a color for the shape. Can be a hex code or color word",
     }
   ])
-}
 
+  .then((answers) => {
+    // Use user feedback for... whatever!!
+    let svg;
+    if (answers.shape === "Circle"){
+        svg = new Circle();
+    } else if (answers.shape === "Square"){
+        // assign svg square
+    } else {
+        // assign svg triangle
+    }
+
+    svg.setText(answers.text);
+    svg.setColor(answers.textColor);
+    svg.setShapeColor(answers.shapeColor);
+    console.log(answers);
+  })
+}
+ userPrompts();
 // use answers to create writefile
 
 // tell fs pathway to examples folder
