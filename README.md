@@ -27,8 +27,7 @@ npm i
 ## Usage
 ​To use this SVG Logo Creator, the dependencies must first be installed (refer to section above). Once this is done, the user will run the following command " node index.js ". The user will be prompted with questions in which they will choose 3 characters, a color for the text, a shape (circle, triangle or square), and a shape color. This will then generate a .svg file with the chosen shape, text, and other attributes.
 
-​
-[<iframe src="https://drive.google.com/file/d/1SNQA2qYZTCj9jRvJ98lHi_op0vury1L3/preview" width="640" height="480"></iframe>]
+​[walk through video link](https://drive.google.com/file/d/1SNQA2qYZTCj9jRvJ98lHi_op0vury1L3/preview)
 
 ## License
 ​
