@@ -52,11 +52,11 @@ const userPrompts = () => {
     svg.setColor(answers.textColor);
     svg.setShapeColor(answers.shapeColor);
 
-    fs.writeFile( `./examples/${answers.shape}.svg`, svg.render(), (err) => {
+    fs.writeFile( `./examples/logo.svg`, svg.render(), (err) => {
         if (err){
             console.log(err);
         } else {
-            console.log("Success!");
+            console.log("Generated logo.svg");
         }
     } )
 
