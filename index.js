@@ -2,6 +2,8 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 const Shape = require("./lib/shapes")
 const Circle = require("./lib/circle");
+const Triangle = require("./lib/triangle");
+const Square = require("./lib/square");
 
 // need a function that uses inq to ask user for text, text color, shape,  and shape color.
 const userPrompts = () => {
@@ -44,8 +46,10 @@ const userPrompts = () => {
         svg = new Circle();
     } else if (answers.shape === "Square"){
         // assign svg square
+        svg = new Square();
     } else {
         // assign svg triangle
+        svg = new Triangle();
     }
 
     svg.setText(answers.text);
@@ -64,8 +68,6 @@ const userPrompts = () => {
   })
 }
  userPrompts();
-// use answers to create writefile
 
-// tell fs pathway to examples folder
 
 
